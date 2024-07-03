@@ -6,4 +6,6 @@ export default function Page() {
   if(accessDenied) {
     redirect('/login')
   }
+
+  // 定义其他需求和逻辑
 }

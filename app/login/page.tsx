@@ -2,7 +2,7 @@ import { authenticate } from '@/app/lib/actions'
 import { useFormState, useFormStatus } from 'react-dom'
 
 export default function Page() {
-  const [errorMessage, dispatch] = useFormState(authenticate, undefined)
+  const [errorMessage, dispatch] = useFormState(authenticate, null)
 
   return (
     <form action={dispatch} className="flex min-h-screen flex-col items-center justify-between p-24">
